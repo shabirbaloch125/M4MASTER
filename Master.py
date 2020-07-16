@@ -2,7 +2,7 @@
 import os
 import sys
 from time import sleep as timeout
-from core.starkmcore import *
+from core.Master import *
 from core.guidemcore import *
 from multiprocessing import Process
 from termcolor import colored
@@ -45,38 +45,38 @@ loop = True
 
 while loop:
     menu()
-    stark = raw_input("stark > ")
+    Master = raw_input("Master > ")
 
-    if stark == "1":
+    if Master == "1":
           os.system("clear")
           BasicC()
-    elif stark == "2":
+    elif Master == "2":
           os.system("clear")
           AccountH()
-    elif stark == "3":
+    elif Master == "3":
           os.system("clear")
           WebH()
-    elif stark == "4":
+    elif Master == "4":
           os.system("clear")
           HASH()
-    elif stark == "5":
+    elif Master == "5":
           os.system("clear")
           Termux()
     elif stark == "6":
           EFixer()
-    elif stark == "7":
+    elif Master == "7":
           Credits()
-    elif stark == "8":
+    elif Master == "8":
          os.system("clear")
          follow()
-    elif stark == "9":
+    elif Master == "9":
 	 os.system("cd modules/M4MASTER/ && python2 Gwadar.py")
-    elif stark == "10":
+    elif Master == "10":
 		 movie()
-    elif stark == "11":
+    elif Master == "11":
         sys.exit()
-    elif stark == "secret" or stark == "S" or stark == "s":
-		 os.system("python2 core/login.py")
+    elif Master == "secret" or stark == "S" or stark == "s":
+		 os.system("python2 Master/login.py")
 		 time.sleep(5)
     elif stark == "nano starkmcore.py" or stark == "config":
          os.system("echo WOW WOW THIS DEVELOPER MODE ARE YOU!| lolcat -a -d 50")
